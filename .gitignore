@@ -1,7 +1,5 @@
 Pipfile.lock
 
-data/*
-
 log
 log.lock
 
