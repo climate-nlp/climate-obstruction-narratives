@@ -200,9 +200,10 @@ We validate our scoring script and dataset by running the following script:
 
 ## License
 
-This is a collaborative project of InfluenceMap and Stanford. 
+This is a collaborative project of [InfluenceMap](https://influencemap.org/) and Stanford. 
 The rights to the dataset belong to InfluenceMap and the source code is joint property.
-See LICENSE file under this project for the license of the code.
+See [Terms and Conditions](https://influencemap.org/terms) of InfluenceMap.
+See LICENSE file under this project for the license of the code (i.e., Apache 2.0).
 Note that this project includes third party codes which are not under our license.
 Different licenses apply to models and datasets.
 
