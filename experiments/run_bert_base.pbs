@@ -1,0 +1,35 @@
+set -eu
+
+# Language model
+export PLM="bert-base-cased"
+# Train batch-size
+export BS=8
+# Gradient accumulation steps
+export GS=1
+# Max sequence length
+export MAX_TRAIN_LEN=128
+export MAX_INFER_LEN=128
+
+export TEST_FILE=./Data/test.csv
+export PREDICT_FILE=./Data/test_hidden.csv
+
+LOG_PREFIX=./Result/bert-base-cased
+
+for SEED in 0 1 2
+do
+    export SEED=${SEED}
+    export LOGDIR=${LOG_PREFIX}_full_seed-${SEED}
+    export TRAIN_FILE=./Data/train.csv
+    ./scripts/run_bert.sh
+done
+
+for FEWSHOT_NUM in 8 32 128 512
+do
+    for SEED in 0 1 2
+    do
+        export SEED=${SEED}
+        export LOGDIR=${LOG_PREFIX}_fewshot-${FEWSHOT_NUM}_seed-${SEED}
+        export TRAIN_FILE=./Data/train_fewshot-${FEWSHOT_NUM}.csv
+        ./scripts/run_bert.sh
+    done
+done

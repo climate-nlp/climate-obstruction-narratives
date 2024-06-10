@@ -1,0 +1,10 @@
+numpy==1.26.0
+pandas==2.1.1
+datasets==2.14.6
+sentencepiece==0.1.99
+dspy-ai==2.1.1
+transformers==4.28.1
+tqdm==4.66.1
+tensorboard==2.14.0
+scikit-learn==1.3.2
+
