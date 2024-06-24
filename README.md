@@ -1,7 +1,7 @@
 # Predicting Narratives of Climate Obstruction in Social Media Advertising
 
 This is a codebase to reproduce our paper "Predicting Narratives of Climate Obstruction in Social Media Advertising" accepted to Findings of ACL 2024.
-Note that this is a research codebase to reproduce the paper results. It is not intended for use by investors or practitioners.
+This project is not intended for use by investors or practitioners.
 
 
 ## Setup
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ## Dataset
 
-This project contains a Facebook ad dataset built based on the work of Holder et al. 2023 (see the bottom for reference.) 
+This project contains a Facebook ad dataset built based on the work of [Holder et al. 2023](https://link.springer.com/article/10.1007/s10584-023-03494-4) (see the bottom for reference.) 
 The NLP tailored datasets are stored as CSV files as follows:
 
 ```text
@@ -49,7 +49,7 @@ The ```rogl_data``` directory contains "silver" samples labeled by GPT-4 Turbo. 
 
 #### The label definitions
 
-Our task provides seven labels as follows:
+Our task uses seven labels provided by Holder et al. 2024 as follows:
 
 - CA: Emphasizes how the oil and gas sector contributes to local and national economies through tax revenues, charitable efforts, and support for local businesses.
 - CB: Focuses on the creation and sustainability of jobs by the oil and gas industry.
@@ -59,7 +59,7 @@ Our task provides seven labels as follows:
 - PB: Emphasizes the importance of oil and gas as raw materials for various non-power-related uses and manufactured goods.
 - SA: Stresses how domestic oil and gas production benefits the nation, including energy independence, energy leadership, and the idea of supporting American energy.
 
-See our paper for more detailed description and statistics.
+See Holder et al. 2024's paper and our paper for more detailed description and statistics.
 
 
 ## Important codes
@@ -102,7 +102,7 @@ python src/bert_model.py \
 
 
 #### src/predict_by_dspy.py
-This is to predict labels by LLM zeroshot (or few-shot) prompting using Stanford DSPy library. The example usage is:
+This is to predict labels by LLM zeroshot (or few-shot) prompting using [Stanford DSPy](https://github.com/stanfordnlp/dspy). The example usage is:
 
 ```bash
  python src/predict_by_dspy.py \
