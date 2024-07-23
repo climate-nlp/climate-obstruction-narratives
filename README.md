@@ -49,7 +49,7 @@ The ```rogl_data``` directory contains "silver" samples labeled by GPT-4 Turbo. 
 
 #### The label definitions
 
-Our task uses seven labels provided by Holder et al. 2024 as follows:
+Our task uses seven labels provided by Holder et al. 2023 as follows:
 
 - CA: Emphasizes how the oil and gas sector contributes to local and national economies through tax revenues, charitable efforts, and support for local businesses.
 - CB: Focuses on the creation and sustainability of jobs by the oil and gas industry.
@@ -59,7 +59,7 @@ Our task uses seven labels provided by Holder et al. 2024 as follows:
 - PB: Emphasizes the importance of oil and gas as raw materials for various non-power-related uses and manufactured goods.
 - SA: Stresses how domestic oil and gas production benefits the nation, including energy independence, energy leadership, and the idea of supporting American energy.
 
-See Holder et al. 2024's paper and our paper for more detailed description and statistics.
+See Holder et al. 2023's paper and our paper for more detailed description and statistics.
 
 
 ## Important codes
